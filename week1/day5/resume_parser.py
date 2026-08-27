@@ -1,9 +1,12 @@
+import json
 import os
-import time
 from pathlib import Path
+
 from dotenv import load_dotenv
+from fastapi import FastAPI
 from groq import Groq
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
+from pypdf import PdfReader
 
 load_dotenv()
 my_api_key=os.getenv("GROQ_API_KEY")
