@@ -1,5 +1,5 @@
 .env
 .vscode/
-week1/.venv/
+.venv/
 __pycache__/
 *.pyc
